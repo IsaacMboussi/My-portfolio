@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Mboussi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Zick Concepts</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>Isaac Mboussi</h1>
+            <p class="tagline">Graphics Designer | UI/UX Designer | Video Editor | Web Developer</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Isaac Mboussi" class="profile-img">
+                <div class="about-text">
+                    <p>Hello! I'm Isaac Mboussi, a passionate Graphics Designer specializing in UI/UX design and Visual Identity Design. With a keen eye for aesthetics and a deep understanding of user experience, I strive to create visually compelling and intuitive designs that resonate with users.
+
+                        My journey in design has equipped me with a strong foundation in crafting engaging digital experiences, whether it’s through sleek interfaces or memorable brand identities. I believe that great design is not just about how something looks, but how it works, and I am committed to bridging the gap between functionality and creativity.
+                        
+                        In addition to my design expertise, I have a solid background in video editing, proficient in tools like CapCut and Adobe Premiere Pro. This allows me to bring dynamic visual storytelling to life, enhancing the impact of my projects.
+                        
+                        I am always eager to take on new challenges and collaborate with like-minded creatives. Let’s bring your vision to life together!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Premiere Pro</li>
+                            <li>CapCut</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                            <li>Microsoft Office</li>
+                            <li>Google Workspace</li>
+                            <li>Microsoft Excel</li>    
+                            <li>Microsoft Word</li>
+                            <li>Microsoft PowerPoint</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="graphic">Graphic Design</button>
+                <button class="category-btn" data-category="uiux">UI/UX Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Graphic Design Projects -->
+                <div class="project-card" data-category="graphic">
+                    <img src="images/Ajuoza1.jpg"Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Ajuoza social media post1</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="graphic">
+                    <img src="images/Ajuoza2.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Ajuoza social media post2</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="graphic"></div>
+                    <img src="images/Ajuoza3.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Ajuoza social media post3</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="graphic"></div>
+                    <img src="images/delc.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Delc bootcamp</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="graphic"></div>
+                    <img src="images/IMG_2256.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Project Title</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="graphic"></div>
+                    <img src="images/IMG_2257.jpg" alt="Graphic Design Project 1">
+                    <div class="project-info">
+                        <h3>Project Title</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <!-- UI/UX Projects -->
+                <div class="project-card" data-category="uiux">
+                    <img src="project2.jpg" alt="UI/UX Project 1">
+                    <div class="project-info">
+                        <h3>Project Title</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Isaac Mboussi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
