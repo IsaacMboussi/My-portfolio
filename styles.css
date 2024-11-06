@@ -1294,7 +1294,6 @@ h2::after {
 }
 
 #modalDescription {
-    color: var(--text-secondary);
-    padding: 1rem;
-    margin: 0;
+    color: var(--text-primary);
+    margin-top: 1rem;
 }
