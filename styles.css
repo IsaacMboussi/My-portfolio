@@ -1258,3 +1258,43 @@ h2::after {
 .card:hover::before {
     transform: translateX(100%);
 }
+
+/* Modal Styles */
+.modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.modal-title {
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.modal-body {
+    padding: 0;
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 80vh;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) brightness(200%);
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+#modalDescription {
+    color: var(--text-secondary);
+    padding: 1rem;
+    margin: 0;
+}

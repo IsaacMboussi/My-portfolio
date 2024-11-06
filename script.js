@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional: Add keyboard navigation for modal
+    // Optional: Add keyboard navigation
     document.addEventListener('keydown', function(e) {
         if (!document.getElementById('imageModal').classList.contains('show')) return;
         
