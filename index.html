@@ -4,146 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Mboussi - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Zick Concepts</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <div class="hero">
-                <h1>Isaac Mboussi</h1>
-            <p class="tagline">Graphics Designer | UI/UX Designer | Video Editor | Web Developer</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Zick Concepts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="images/profile.jpg" alt="Isaac Mboussi" class="profile-img">
-                <div class="about-text">
-                    <p>Hello! I'm Isaac Mboussi, a passionate Graphics Designer specializing in UI/UX design and Visual Identity Design. With a keen eye for aesthetics and a deep understanding of user experience, I strive to create visually compelling and intuitive designs that resonate with users.
+    <!-- Hero Section -->
+    <section id="home" class="vh-100 d-flex align-items-center">
+        <div class="cyber-grid"></div>
+        <div class="floating-particles"></div>
+        <div class="container text-center position-relative">
+            <div class="glitch-wrapper">
+                <h1 class="display-4 mb-3 glitch-text" data-text="Isaac Mboussi">Isaac Mboussi</h1>
+            </div>
+            <p class="lead mb-4 cyber-text" id="typed-text">Graphic Designer | UI/UX Designer | Visual Identity Designer | Video Editor</p>
+            <a href="#" class="btn btn-primary btn-lg cyber-button" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4">
+                    <img src="images/profile.jpg" alt="Isaac Mboussi" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">Hello! I'm Isaac Mboussi, a passionate Graphics Designer specializing in UI/UX design and Visual Identity Design...With a keen eye for aesthetics and a deep understanding of user experience, I strive to create visually compelling and intuitive designs that resonate with users.
 
                         My journey in design has equipped me with a strong foundation in crafting engaging digital experiences, whether it’s through sleek interfaces or memorable brand identities. I believe that great design is not just about how something looks, but how it works, and I am committed to bridging the gap between functionality and creativity.
                         
                         In addition to my design expertise, I have a solid background in video editing, proficient in tools like CapCut and Adobe Premiere Pro. This allows me to bring dynamic visual storytelling to life, enhancing the impact of my projects.
                         
                         I am always eager to take on new challenges and collaborate with like-minded creatives. Let’s bring your vision to life together!</p>
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe Premiere Pro</li>
-                            <li>CapCut</li>
-                            <li>Figma</li>
-                            <li>Canva</li>
-                            <li>Microsoft Office</li>
-                            <li>Google Workspace</li>
-                            <li>Microsoft Excel</li>    
-                            <li>Microsoft Word</li>
-                            <li>Microsoft PowerPoint</li>
-                            
-                        </ul>
+                    
+                    <h3 class="mt-4 mb-3">Skills</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="badge bg-primary">HTML5</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">CSS3</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">JavaScript</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Adobe Photoshop</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Adobe Premiere Pro</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">CapCut</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="badge bg-primary">Figma</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Canva</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Microsoft Office</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Google Workspace</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Microsoft Excel</span></li>
+                                <li class="mb-2"><span class="badge bg-primary">Microsoft PowerPoint</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-categories">
-                <button class="category-btn active" data-category="all">All</button>
-                <button class="category-btn" data-category="graphic">Graphic Design</button>
-                <button class="category-btn" data-category="uiux">UI/UX Design</button>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            
+            <div class="btn-group mb-4 d-flex justify-content-center gap-2">
+                <button class="btn active" data-category="all">All</button>
+                <button class="btn" data-category="graphic">Graphic Design</button>
+                <button class="btn" data-category="uiux">UI/UX Design</button>
             </div>
-            <div class="projects-grid">
-                <!-- Graphic Design Projects -->
-                <div class="project-card" data-category="graphic">
-                    <img src="images/Ajuoza1.jpg"Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Ajuoza social media post1</h3>
-                        <p>Graphic Design</p>
+
+            <div class="row g-4">
+                <!-- Project Card -->
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/Ajuoza2.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Ajuoza social media post1</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="project-card" data-category="graphic">
-                    <img src="images/Ajuoza2.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Ajuoza social media post2</h3>
-                        <p>Graphic Design</p>
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/Ajuoza1.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Ajuoza social media post2</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="graphic"></div>
-                    <img src="images/Ajuoza3.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Ajuoza social media post3</h3>
-                        <p>Graphic Design</p>
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/Ajuoza3.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Ajuoza social media post3</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="graphic"></div>
-                    <img src="images/delc.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Delc bootcamp</h3>
-                        <p>Graphic Design</p>
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/delc.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">DELC Foundation Bootcamp Flyer</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="graphic"></div>
-                    <img src="images/IMG_2256.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Graphic Design</p>
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/IMG_2256.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Social media post</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="graphic"></div>
-                    <img src="images/IMG_2257.jpg" alt="Graphic Design Project 1">
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>Graphic Design</p>
+                <div class="col-md-4" data-category="graphic">
+                    <div class="card position-relative">
+                        <img src="images/IMG_2257.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Social media post</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                <!-- UI/UX Projects -->
-                <div class="project-card" data-category="uiux">
-                    <img src="project2.jpg" alt="UI/UX Project 1">
-                    <div class="project-info">
-                        <h3>Project Title</h3>
-                        <p>UI/UX Design</p>
+
+                <div class="col-md-4" data-category="graphic"></div>
+                    <div class="card position-relative">
+                        <img src="images/IMG_2259.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Social media post</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
                     </div>
                 </div>
-                
+                <div class="col-md-4" data-category="graphic"></div>
+                    <div class="card position-relative">
+                        <img src="images/IMG_2260.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Social media post</h5>
+                            <p class="card-text">Graphic Design</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards following the same structure -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Isaac Mboussi. All rights reserved.</p>
+    <footer class="py-4 bg-dark text-white text-center">
+        <p class="mb-0">&copy; 2024 Isaac Mboussi. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Project Image">
+                    <p class="mt-3" id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title glow-text">Contact Options</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-grid gap-3">
+                        <a href="mailto:isaacmboussi1@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope me-2"></i> Email Me
+                        </a>
+                        <a href="https://linkedin.com/in/isaac-mboussi-8070b7253" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-linkedin me-2"></i> LinkedIn
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-twitter me-2"></i> Twitter
+                        </a>
+                        <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">
+                            <i class="fas fa-paper-plane me-2"></i> Contact Form
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
