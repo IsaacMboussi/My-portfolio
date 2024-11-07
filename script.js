@@ -225,3 +225,39 @@ document.addEventListener('DOMContentLoaded', function() {
         modalImage.style.transform = 'scale(1)';
     });
 }); 
+
+// Array of skills
+const skills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Adobe Photoshop",
+    "Adobe Premiere Pro",
+    "CapCut",
+    "Figma",
+    "Canva",
+    "Microsoft Office",
+    "Google Workspace",
+    "Microsoft Excel",
+    "Microsoft PowerPoint"
+];
+
+// Function to create skill badges
+function displaySkills() {
+    const container = document.getElementById('skill-container');
+    
+    skills.forEach(skill => {
+        const skillItem = document.createElement('li');
+        skillItem.className = 'mb-2 list-unstyled';
+    
+        const skillBadge = document.createElement('span');
+        skillBadge.className = 'skill-badge';
+        skillBadge.textContent = skill;
+        
+        skillItem.appendChild(skillBadge);
+        
+        container.appendChild(skillItem);
+    });
+}
+
+displaySkills();
