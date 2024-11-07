@@ -173,7 +173,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function(e) {
+            // Don't open modal if clicking the Figma button
+            if (e.target.closest('.btn-figma')) {
+                return;
+            }
+            
             // Get data from card
             const image = this.getAttribute('data-image');
             const title = this.getAttribute('data-title');

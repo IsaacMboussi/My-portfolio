@@ -1305,7 +1305,13 @@ h2::after {
     border: 1px solid var(--accent);
     transition: all 0.3s ease;
     font-size: 0.9rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
     width: 100%;
+    margin-top: auto;
+    z-index: 10;
+    position: relative;
 }
 
 .btn-figma:hover {
@@ -1314,7 +1320,177 @@ h2::after {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* Ensure Font Awesome icons are loaded */
-.fab.fa-figma {
+.btn-figma .fa-figma {
     font-size: 1.1em;
+    vertical-align: middle;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+}
+
+/* Make sure text is visible */
+.card-title {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Icon Styling */
+.btn-figma i {
+    margin-right: 8px;
+}
+
+/* Figma Indicator Styles */
+.figma-indicator {
+    color: var(--accent);
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    margin-top: auto;  /* This pushes it to the bottom */
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.figma-indicator i {
+    font-size: 1.1em;
+    margin-right: 8px;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+}
+
+/* Make sure text colors are visible */
+.card-title {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    margin-bottom: auto;  /* This pushes the figma indicator down */
+}
+
+/* Figma Button Styles */
+.figma-button {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover .figma-button {
+    background: var(--accent);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.figma-button i {
+    font-size: 1.2em;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+}
+
+.card-title {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Card Link Styles */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: all 0.3s ease;
+}
+
+/* Figma Button Styles */
+.figma-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 255, 255, 0.9);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent);
+    backdrop-filter: blur(5px);
+    font-weight: 500;
+}
+
+.figma-button i {
+    font-size: 1.2em;
+}
+
+/* Hover Effects */
+.card-link:hover .figma-button {
+    opacity: 1;
+}
+
+.card-link:hover .card-img-top {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+}
+
+/* Ensure proper card styling */
+.project-card {
+    overflow: hidden;
+}
+
+.card-body {
+    background: var(--bg-secondary);
+    position: relative;
+    z-index: 1;
 }
