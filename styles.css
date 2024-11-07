@@ -13,7 +13,7 @@
     --accent: #0ff;
     --accent-secondary: #f0f;
     --nav-bg: rgba(10, 10, 15, 0.9);
-    --primary-color: #0d6efd;  /* Bootstrap's default blue */
+    --primary-color: #1c6ae7;  /* Bootstrap's default blue */
     --secondary-color: #6c757d;
     --text-color: #212529;
     --light-bg: #f8f9fa;
@@ -1493,4 +1493,21 @@ h2::after {
     background: var(--bg-secondary);
     position: relative;
     z-index: 1;
+}
+
+/* Skill Badge Styles */
+.skill-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
