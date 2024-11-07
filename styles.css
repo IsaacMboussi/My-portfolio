@@ -1297,3 +1297,24 @@ h2::after {
     color: var(--text-primary);
     margin-top: 1rem;
 }
+
+/* Figma Button Styles */
+.btn-figma {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.btn-figma:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Ensure Font Awesome icons are loaded */
+.fab.fa-figma {
+    font-size: 1.1em;
+}
