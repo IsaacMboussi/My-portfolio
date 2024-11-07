@@ -1511,3 +1511,117 @@ h2::after {
     color: var(--bg-primary);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
+
+/* About Section Styles */
+#about {
+    background: var(--bg-primary);
+    position: relative;
+}
+
+#about h2 {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    filter: grayscale(20%);
+}
+
+.image-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    transform: translate(10px, 10px);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.profile-image-container:hover .profile-image {
+    transform: translate(5px, 5px);
+    filter: grayscale(0%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.profile-image-container:hover .image-border {
+    transform: translate(15px, 15px);
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+/* Skill Badge Styles */
+.skill-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Text Styles */
+.lead {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+h3 {
+    color: var(--accent);
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-image-container {
+        max-width: 250px;
+        margin-bottom: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image-container {
+        max-width: 200px;
+    }
+    
+    .image-border {
+        transform: translate(8px, 8px);
+    }
+    
+    .profile-image-container:hover .image-border {
+        transform: translate(12px, 12px);
+    }
+    
+    .skill-badge {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
